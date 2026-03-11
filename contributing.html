@@ -40,12 +40,13 @@
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="_static/documentation_options.js?v=d45e8c67"></script>
-    <script src="_static/doctools.js?v=9bcbadda"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'contributing';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Helpers" href="api/paulie.helpers.html" />
+    <link rel="next" title="References" href="references.html" />
+    <link rel="prev" title="paulie.helpers.drawing.plot_graph_by_nodes" href="api/generated/paulie.helpers.drawing.plot_graph_by_nodes.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -132,29 +133,29 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="classification.html">
-    Classification of Pauli DLAs
+  <a class="nav-link nav-internal" href="user/index.html">
+    User Guide
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="commutator_graph.html">
-    Commutator graph
+  <a class="nav-link nav-internal" href="api/index.html">
+    API Reference
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
+    Contribute to PauLie
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="average_graph_complexity.html">
-    Average graph complexity
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="second_moment.html">
-    Second-Order Twirl & Quadratic Symmetries
+  <a class="nav-link nav-internal" href="references.html">
+    References
   </a>
 </li>
 
@@ -166,34 +167,6 @@
                 </button>
                 <ul id="pst-nav-more-links" class="dropdown-menu">
                     
-<li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="matrix_decomposition.html">
-    Matrix decomposition
-  </a>
-</li>
-
-
-<li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="optimal_universal_generators.html">
-    Optimal universal generator sets
-  </a>
-</li>
-
-
-<li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="api/index.html">
-    API Reference
-  </a>
-</li>
-
-
-<li class=" current active">
-  <a class="nav-link dropdown-item nav-internal" href="#">
-    Contribute to PauLie
-  </a>
-</li>
-
-
 <li class=" ">
   <a class="nav-link dropdown-item nav-external" href="https://github.com/AmanieOxana/PauLie">
     Github
@@ -291,43 +264,8 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="classification.html">
-    Classification of Pauli DLAs
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="commutator_graph.html">
-    Commutator graph
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="average_graph_complexity.html">
-    Average graph complexity
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="second_moment.html">
-    Second-Order Twirl & Quadratic Symmetries
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="matrix_decomposition.html">
-    Matrix decomposition
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="optimal_universal_generators.html">
-    Optimal universal generator sets
+  <a class="nav-link nav-internal" href="user/index.html">
+    User Guide
   </a>
 </li>
 
@@ -342,6 +280,13 @@
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="#">
     Contribute to PauLie
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="references.html">
+    References
   </a>
 </li>
 
@@ -447,7 +392,7 @@
 <p>We welcome contributions from everyone! By participating in PauLie, you agree to follow our guidelines.</p>
 <ol class="arabic simple">
 <li><p>As stated in <a class="reference external" href="getting_started.html">Getting started</a>, ensure you have Python 3.12 or higher installed on your machine or in a virtual environment.</p></li>
-<li><p>You requires to <a class="reference external" href="https://python-poetry.org/docs/#installing-with-pipx">install poetry</a> to manage the dependencies of PauLie.</p></li>
+<li><p>You requires to <a class="reference external" href="https://docs.astral.sh/uv/getting-started/installation/#pypi">install uv</a> to manage the dependencies of PauLie.</p></li>
 <li><p>Make sure you have a <a class="reference external" href="https://github.com/signup/free">GitHub account</a>.</p></li>
 <li><p><a class="reference external" href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo">Fork</a> the repository on GitHub.</p></li>
 <li><p><a class="reference external" href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository">Clone</a> your fork locally:</p></li>
@@ -462,12 +407,12 @@
 </pre></div>
 </div>
 <ol class="arabic simple" start="7">
-<li><p>Install dependencies with Poetry:</p></li>
+<li><p>Install dependencies with uv:</p></li>
 </ol>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>poetry<span class="w"> </span>install
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>sync<span class="w"> </span>--all-extras<span class="w"> </span>--dev
 </pre></div>
 </div>
-<p>Poetry will create a virtual environment and install all dependencies there. You are now ready to run, test, and develop the project.</p>
+<p>uv will create a virtual environment and install all dependencies there. You are now ready to run, test, and develop the project.</p>
 <section id="making-changes">
 <h2>Making changes<a class="headerlink" href="#making-changes" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
@@ -505,12 +450,66 @@ git<span class="w"> </span>merge<span class="w"> </span>upstream/main
 </ol>
 <p>Before submitting a pull request, please make sure your changes pass all tests.</p>
 </section>
+<section id="public-api-contributions">
+<span id="id2"></span><h2>Public API Contributions<a class="headerlink" href="#public-api-contributions" title="Link to this heading">#</a></h2>
+<p>The PauLie public API defines the <strong>symbols users should import directly</strong> from
+<code class="docutils literal notranslate"><span class="pre">paulie</span></code> or curated subpackages. This ensures stability, discoverability, and
+consistent documentation.</p>
+<section id="policy">
+<h3>Policy<a class="headerlink" href="#policy" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Only curated symbols are public</strong>:</p>
+<ul class="simple">
+<li><p>Expose classes, functions, and constants intended for common use.</p></li>
+<li><p>Internal helpers remain private.</p></li>
+</ul>
+</li>
+<li><p><strong>Explicit exports</strong>:</p>
+<ul class="simple">
+<li><p>All public API is defined and curated in modules <code class="docutils literal notranslate"><span class="pre">paulie/__init__.py</span></code> using <code class="docutils literal notranslate"><span class="pre">__all__</span></code>.</p></li>
+</ul>
+</li>
+<li><p><strong>Deprecation</strong>:</p>
+<ul class="simple">
+<li><p>Deprecated symbols are handled via <code class="docutils literal notranslate"><span class="pre">__getattr__</span></code> and <code class="docutils literal notranslate"><span class="pre">warnings.warn(DeprecationWarning)</span></code></p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="adding-a-new-symbol">
+<h3>Adding a New Symbol<a class="headerlink" href="#adding-a-new-symbol" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Check that the new feature is <strong>commonly used or essential</strong> for end users.</p></li>
+<li><p>Add it to the curated API in src/paulie/__init__.py:</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">.common</span><span class="w"> </span><span class="kn">import</span> <span class="n">new_function</span>
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;new_function&quot;</span><span class="p">,</span> <span class="o">...</span><span class="p">]</span>
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p>Add symbol in src/tests/test_pulic_api.py:</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">paulie</span>
+
+<span class="n">public_symbols</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;new_function&quot;</span><span class="p">,</span> <span class="o">...</span><span class="p">]</span>
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p>If replacing a symbol, include a <strong>deprecated_symbols</strong>.</p></li>
+</ol>
+</section>
+</section>
 <section id="functional-testing">
-<span id="id2"></span><h2>Functional Testing<a class="headerlink" href="#functional-testing" title="Link to this heading">#</a></h2>
+<span id="id3"></span><h2>Functional Testing<a class="headerlink" href="#functional-testing" title="Link to this heading">#</a></h2>
 <p>Ensure that both <code class="code docutils literal notranslate"><span class="pre">pytest</span></code> and <code class="code docutils literal notranslate"><span class="pre">pytest-cov</span></code> are installed on your machine.
 If they are not installed, follow the installation instructions for <a class="reference external" href="https://docs.pytest.org/en/stable/getting-started.html">pytest</a> and <a class="reference external" href="https://pytest-cov.readthedocs.io/en/latest/readme.html#installation">pytest-cov</a>.</p>
 <p>To verify that your code is working correctly, run the following commands in the PauLie directory:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>poetry<span class="w"> </span>run<span class="w"> </span>pytest<span class="w"> </span>-q
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>run<span class="w"> </span>pytest<span class="w"> </span>-q
 </pre></div>
 </div>
 <p>The pytest module is used for running tests, and pytest-cov can generate local code coverage reports.
@@ -518,22 +517,27 @@ Code coverage can be checked using the <code class="code docutils literal notran
 <p>Any changes to an existing module should have corresponding tests placed in its <code class="code docutils literal notranslate"><span class="pre">tests</span></code> directory (e.g., <code class="code docutils literal notranslate"><span class="pre">PauLie/tests/test_module.py</span></code>).</p>
 </section>
 <section id="lint-checking">
-<span id="id3"></span><h2>Lint Checking<a class="headerlink" href="#lint-checking" title="Link to this heading">#</a></h2>
+<span id="id4"></span><h2>Lint Checking<a class="headerlink" href="#lint-checking" title="Link to this heading">#</a></h2>
 <p>Formatting and linting are handled using <code class="code docutils literal notranslate"><span class="pre">ruff</span></code>. To install <code class="code docutils literal notranslate"><span class="pre">ruff</span></code>, refer to the official <a class="reference external" href="https://docs.astral.sh/ruff/installation/">ruff installation instructions</a>.</p>
 <p>To detect errors and style issues such as unused imports, undefined variables, style violations, and complexity problems, run:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>poetry<span class="w"> </span>run<span class="w"> </span>ruff<span class="w"> </span>check
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>run<span class="w"> </span>ruff<span class="w"> </span>check
 </pre></div>
 </div>
 <p>To verify that your code is formatted according to Ruff’s formatter rules, run:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>poetry<span class="w"> </span>run<span class="w"> </span>ruff<span class="w"> </span>format<span class="w"> </span>--check
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>run<span class="w"> </span>ruff<span class="w"> </span>format<span class="w"> </span>--check
 </pre></div>
 </div>
 <p>Note: without the <code class="code docutils literal notranslate"><span class="pre">--check</span></code> option, <code class="code docutils literal notranslate"><span class="pre">ruff</span> <span class="pre">format</span></code> will modify your code automatically.</p>
+<p>For deeper static analysis and design-level checks, we use <code class="code docutils literal notranslate"><span class="pre">pylint</span></code>.</p>
+<p>To lint the source code, test scripts, and examples without installing <code class="code docutils literal notranslate"><span class="pre">pylint</span></code>, run:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uvx<span class="w"> </span>pylint<span class="w"> </span><span class="s2">&quot;src/**/*.py&quot;</span><span class="w"> </span><span class="s2">&quot;tests/**/*.py&quot;</span><span class="w"> </span><span class="s2">&quot;examples/**/*.py&quot;</span>
+</pre></div>
+</div>
 </section>
 <section id="document-building">
 <span id="doc-building"></span><h2>Document Building<a class="headerlink" href="#document-building" title="Link to this heading">#</a></h2>
 <p>The sphinx is used in PauLie to build the HTML documentation, use:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>poetry<span class="w"> </span>run<span class="w"> </span>sphinx-build<span class="w"> </span>-b<span class="w"> </span>html<span class="w"> </span>-W<span class="w"> </span>docs/source<span class="w"> </span>docs/_build/html
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>run<span class="w"> </span>sphinx-build<span class="w"> </span>-b<span class="w"> </span>html<span class="w"> </span>-W<span class="w"> </span>docs/source<span class="w"> </span>docs/_build/html
 </pre></div>
 </div>
 </section>
@@ -550,13 +554,22 @@ Code coverage can be checked using the <code class="code docutils literal notran
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="api/paulie.helpers.html"
+       href="api/generated/paulie.helpers.drawing.plot_graph_by_nodes.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Helpers</p>
+        <p class="prev-next-title">paulie.helpers.drawing.plot_graph_by_nodes</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="references.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">References</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -579,6 +592,11 @@ Code coverage can be checked using the <code class="code docutils literal notran
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#making-changes">Making changes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-new-features">Adding New Features</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#public-api-contributions">Public API Contributions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#policy">Policy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-a-new-symbol">Adding a New Symbol</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functional-testing">Functional Testing</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lint-checking">Lint Checking</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#document-building">Document Building</a></li>
@@ -619,7 +637,7 @@ Code coverage can be checked using the <code class="code docutils literal notran
 
   <p class="copyright">
     
-      © Copyright 2024, PauLie contributors.
+      © Copyright 2026, PauLie contributors.
       <br/>
     
   </p>
@@ -628,7 +646,7 @@ Code coverage can be checked using the <code class="code docutils literal notran
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
     <br/>
   </p>
 </div>
